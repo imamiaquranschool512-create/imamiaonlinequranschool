@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://imamiaquranschool.netlify.app/sitemap.xml
