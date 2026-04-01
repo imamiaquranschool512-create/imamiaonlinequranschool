@@ -1578,224 +1578,81 @@
             font-size: 1.1rem;
         }
 
-        <!-- ==================== REGISTRATION SECTION ==================== -->
-<section id="register" class="register-section">
-    <div class="container">
-        <h2 class="section-title">Register for Classes</h2>
-        <p class="section-subtitle">Fill the form below and we will contact you within 24 hours</p>
-        
-        <div class="register-form-container">
-            <form id="registration-form" class="register-form">
-                <div class="form-group">
-                    <label for="student-name">Full Name *</label>
-                    <input type="text" id="student-name" name="from_name" placeholder="Enter your full name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="student-email">Email Address *</label>
-                    <input type="email" id="student-email" name="from_email" placeholder="Enter your email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="student-phone">WhatsApp Number *</label>
-                    <input type="tel" id="student-phone" name="phone" placeholder="+92 300 1234567" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="student-course">Select Course *</label>
-                    <select id="student-course" name="course" required>
-                        <option value="">-- Select Course --</option>
-                        <option value="Basic Noorani Qaida">Basic Noorani Qaida</option>
-                        <option value="Al Quran Kareem">Al Quran Kareem</option>
-                        <option value="Basic Fiqa Jafariya">Basic Fiqa Jafariya</option>
-                        <option value="Basic Fiqa Hanfia">Basic Fiqa Hanfia (Coming Soon)</option>
-                        <option value="Duas And Azkar">Duas And Azkar</option>
-                        <option value="Tajweed in English">Tajweed in English</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="student-message">Message (Optional)</label>
-                    <textarea id="student-message" name="message" placeholder="Any questions or special requirements..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">
-                    <span class="btn-text">Submit Registration</span>
-                    <span class="btn-loading" style="display:none;">Sending...</span>
-                </button>
-                
-                <div id="form-status" class="form-status"></div>
-            </form>
-        </div>
-    </div>
-</section>
+        /* Registration Section */
+        .registration { 
+            padding: 6rem 2rem; 
+            background: linear-gradient(180deg, rgba(30,58,138,0.2) 0%, var(--blue-deep) 100%); 
+        }
 
-<!-- EMAILJS LIBRARY -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        .form-container {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            border: 2px solid var(--gold-primary);
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: var(--glow-gold);
+        }
 
-<!-- FORM HANDLING SCRIPT -->
-<script>
-    // ✅ EMAILJS CONFIGURATION - Aapki IDs
-    const EMAILJS_PUBLIC_KEY = 'SZZN-sEGcYV39nn3L';
-    const EMAILJS_SERVICE_ID = 'service_3oijlgn';
-    const EMAILJS_TEMPLATE_ID = 'xtbxakt';
-    
-    // Initialize EmailJS
-    (function() {
-        emailjs.init(EMAILJS_PUBLIC_KEY);
-    })();
-    
-    // Form Submission Handler
-    document.getElementById('registration-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const btn = this.querySelector('.submit-btn');
-        const btnText = btn.querySelector('.btn-text');
-        const btnLoading = btn.querySelector('.btn-loading');
-        const statusDiv = document.getElementById('form-status');
-        
-        // Loading state
-        btn.disabled = true;
-        btnText.style.display = 'none';
-        btnLoading.style.display = 'inline';
-        statusDiv.innerHTML = '';
-        
-        // Send email
-        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                
-                // Success message
-                statusDiv.innerHTML = '<div class="success-msg">✅ Registration Successful! We will contact you within 24 hours.</div>';
-                document.getElementById('registration-form').reset();
-                
-                // WhatsApp redirect option
-                setTimeout(function() {
-                    if(confirm('Registration submitted! Open WhatsApp to chat directly?')) {
-                        window.open('https://wa.me/923454532675', '_blank');
-                    }
-                }, 1000);
-                
-            }, function(error) {
-                console.log('FAILED...', error);
-                
-                // Error message
-                statusDiv.innerHTML = '<div class="error-msg">❌ Error: ' + error.text + '. Please try again or contact us directly on WhatsApp.</div>';
-                
-            })
-            .finally(function() {
-                // Reset button
-                btn.disabled = false;
-                btnText.style.display = 'inline';
-                btnLoading.style.display = 'none';
-            });
-    });
-</script>
+        .form-row { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 1.5rem; 
+            margin-bottom: 1.5rem; 
+        }
 
-<!-- STYLES -->
-<style>
-    .register-section {
-        padding: 4rem 0;
-        background: linear-gradient(135deg, #0a0e1a 0%, #050814 100%);
-    }
-    
-    .register-form-container {
-        max-width: 600px;
-        margin: 0 auto;
-        background: rgba(255,215,0,0.05);
-        border: 2px solid #ffd700;
-        border-radius: 15px;
-        padding: 2.5rem;
-        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-    
-    .form-group {
-        margin-bottom: 1.5rem;
-    }
-    
-    .form-group label {
-        display: block;
-        color: #ffd700;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-        font-size: 1rem;
-    }
-    
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        width: 100%;
-        padding: 1rem 1.2rem;
-        border: 2px solid #b8860b;
-        border-radius: 10px;
-        background: rgba(0,0,0,0.4);
-        color: #fff;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-    }
-    
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #ffd700;
-        box-shadow: 0 0 15px rgba(255,215,0,0.3);
-        background: rgba(0,0,0,0.5);
-    }
-    
-    .form-group textarea {
-        min-height: 120px;
-        resize: vertical;
-    }
-    
-    .submit-btn {
-        width: 100%;
-        padding: 1.2rem 2rem;
-        background: linear-gradient(135deg, #ffd700, #b8860b);
-        color: #0a0e1a;
-        border: none;
-        border-radius: 10px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    
-    .submit-btn:hover:not(:disabled) {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 40px rgba(255,215,0,0.4);
-    }
-    
-    .submit-btn:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-    }
-    
-    .form-status {
-        margin-top: 1.5rem;
-        text-align: center;
-    }
-    
-    .success-msg {
-        color: #00d4aa;
-        padding: 1rem 1.5rem;
-        background: rgba(0,212,170,0.1);
-        border: 2px solid #00d4aa;
-        border-radius: 10px;
-        font-weight: 600;
-    }
-    
-    .error-msg {
-        color: #ff6b6b;
-        padding: 1rem 1.5rem;
-        background: rgba(255,107,107,0.1);
-        border: 2px solid #ff6b6b;
-        border-radius: 10px;
-        font-weight: 600;
-    }
-</style>
+        .form-group { 
+            display: flex; 
+            flex-direction: column; 
+        }
+
+        .form-group.full { grid-column: 1 / -1; }
+
+        .form-group label { 
+            color: var(--gold-primary); 
+            margin-bottom: 0.5rem; 
+            font-weight: 500; 
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem; 
+        }
+
+        .form-group label i { color: var(--emerald); }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 1rem;
+            border: 2px solid rgba(255,215,0,0.3);
+            border-radius: 15px;
+            background: rgba(0,0,0,0.3);
+            color: #ffffff;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 20px rgba(255,215,0,0.2);
+        }
+
+        .form-group select option { 
+            background: var(--blue-deep); 
+            color: #ffffff; 
+        }
+
+        .btn-full { 
+            width: 100%; 
+            justify-content: center; 
+            margin-top: 1rem; 
+        }
+
         /* NEW: Class Access Section - Premium Rectangle */
         .class-access-section {
             margin-top: 3rem;
@@ -3996,7 +3853,7 @@
             </div>
 
             <div class="form-container">
-                <form action="https://www.emailjs.com/imamiaquranschool512@gmail.com" method="POST" aria-label="Registration form">
+                <form action="https://formsubmit.co/imamiaquranschool512@gmail.com" method="POST" aria-label="Registration form">
                     <input type="hidden" name="_subject" value="New Registration - Imamia Quran School">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="true">
