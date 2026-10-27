@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://imamiaquranschool512-create.github.io/imamiaonlinequranschool/:splat"
-  status = 301
-  force = true
