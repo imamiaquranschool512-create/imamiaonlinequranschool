@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://imamiaquranschool512-create.github.io/imamiaonlinequranschool/sitemap.xml
+Sitemap: https://imamiaquranschool.pages.dev/sitemap.xml
