@@ -1,0 +1,60 @@
+# Imamia Online Quran School
+
+> Imamia Online Quran School is an online Quran academy offering live one-to-one classes for children and adults worldwide, taught by qualified male and female teachers in Urdu, English or Arabic. Courses include Noorani Qaida, Quran reading with Tajweed and Tarteel, basic Fiqh (Jafariya and Hanafi), and Duas and Azkar. New students get a 3-day free trial with no payment required.
+
+The academy's foundation is Shia (Fiqh Jafaria) teaching, and it also teaches Sunni (Fiqh Hanafi) students with respect. Students from all countries are welcome. The website is a single page; the sections below are anchors on the home page.
+
+## Main Sections
+
+- [Home](https://imamiaquranschool.pages.dev/#home): Overview, free trial offer and WhatsApp contact
+- [Courses](https://imamiaquranschool.pages.dev/#why-us): The five courses offered (details below); each course opens inside the website
+- [How It Works](https://imamiaquranschool.pages.dev/#how-it-works): Three steps: register, 3-day free trial, then continue with one-to-one live classes
+- [About Us](https://imamiaquranschool.pages.dev/#about): Mission, vision, class schedule, teachers and what makes the academy different
+- [Online Quran Classes Guide](https://imamiaquranschool.pages.dev/#learn-quran-online): Plain-language description of the classes (English, with an Urdu summary)
+- [FAQ](https://imamiaquranschool.pages.dev/#faq): Answers in English and Urdu about classes, female teachers, languages, time zones, free trial and payment
+- [Register for Free Trial](https://imamiaquranschool.pages.dev/#register): Registration form; the details open in WhatsApp and the student presses Send
+- [Class Access](https://imamiaquranschool.pages.dev/#class-access): How to install Microsoft Teams and send the Teams ID before the first class
+- [Contact](https://imamiaquranschool.pages.dev/#contact): WhatsApp, Facebook, YouTube and email
+- [Install App](https://imamiaquranschool.pages.dev/#install-app): Add the website to a phone or computer home screen; Qaida and Quran pages can be opened offline
+
+## Courses
+
+- Basic Noorani Qaida: Arabic letters and pronunciation with Tajweed rules, for beginners
+- Al Quran Kareem: Quran reading with Tajweed and Tarteel, 30 Paras with page-by-page navigation
+- Basic Fiqa Jafariya: Basic Shia Fiqh, including prayer rules and obligations
+- Basic Fiqa Hanfia: Basic Sunni (Ahl-e-Sunnat) Fiqh Hanafi
+- Duas And Azkar: Daily supplications and azkar for different occasions, with translation
+
+## Classes and Teachers
+
+- Format: live one-to-one classes, held through Microsoft Teams; WhatsApp is offered if Teams is not accessible in the student's area
+- Schedule: Monday to Friday (5 days a week), or 3 days a week with flexible scheduling
+- Teachers: qualified male and female teachers, Shia and Sunni; students can choose teacher gender, Fiqh preference and language at registration
+- Languages: Urdu, English and Arabic
+- Time zones: students worldwide are accommodated; the academy says teachers are available 24/7 across time zones
+- Progress: regular progress updates for parents
+- Free trial: 3 days, including a free assessment and personal consultation, with no credit card needed
+- Fees: shared on inquiry; payment details are shared after the free trial, when the student decides to enroll
+
+## Free Reading Tools on the Website
+
+- Quran viewer: choose a Para (1 to 30), then open pages within that Para
+- Noorani Qaida pages for beginners
+- Duas and Azkar pages
+- Fiqa Jafariya and Fiqa Hanfia course pages
+
+## Contact
+
+- WhatsApp: +92 345 4532675 (https://wa.me/923454532675)
+- Email: imamiaquranschool512@gmail.com
+- Facebook: https://www.facebook.com/imamiaquranschool5
+- YouTube: https://www.youtube.com/channel/UCtZAUt9egMInsAv3xh6gMtg
+- Website: https://imamiaquranschool.pages.dev/
+
+## Urdu Summary
+
+امامیہ آن لائن قرآن اسکول میں بچوں اور بڑوں کو آن لائن قرآن پاک، تجوید، نورانی قاعدہ، فقہ جعفریہ اور فقہ حنفی کی بنیادی تعلیم دی جاتی ہے۔ ہر طالب علم کو مرد یا خاتون استاد کے ساتھ ون ٹو ون کلاس ملتی ہے۔ 3 دن کا مفت ٹرائل دستیاب ہے۔ رابطہ: واٹس ایپ +92 345 4532675۔
+
+## Optional
+
+- Policies: Privacy Policy, Terms & Conditions and Refund Policy are available from the footer of the home page
